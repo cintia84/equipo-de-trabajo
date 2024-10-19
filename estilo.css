@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+body{
+    text-align: center;
+}
+h2{
+    margin: 20px;
+}
+.contenedor{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    position: relative;
+    width: 344px;
+    height: 400px;
+    border: 1px solid #c2c2c2;
+}
+.card img{
+    width: 100%;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 342px;
+    opacity: 0;
+    height: 0;
+    background: linear-gradient(to right, rgba(0,0,0,.7), transparent);
+    transition: .5s;
+}
+.card:hover .overlay{
+    opacity: 1;
+    height: 329px;
+
+}
+ul{
+    position: absolute;
+    list-style: none;
+    top: 50%;
+    left: 0;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition-delay: .5s;
+    transition-duration: .5s;
+}
+.card:hover ul{
+    opacity: 1;
+    left: 40px;
+}
+ul li a{
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    margin: 5px 0;
+    transition: .5s;
+}
+
+
+ul li a:hover{
+    background-color: black;
+    color: white;
+}
+.datos{
+    text-align: center;
+}
+
